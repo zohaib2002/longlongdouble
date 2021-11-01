@@ -26,6 +26,9 @@ Clicking on 'Read More' opens the entire article for reading with a comment sect
 
 **NOTE :** If your content is stored as html make sure to double-up single quote or double quote characters.
 
+### Demonstration
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ZYteGg4CPKE/0.jpg)](https://www.youtube.com/watch?v=ZYteGg4CPKE)
+
 ### Compatibility
 - The website runs perfectly on latest versions of all major web browsers.
 - The website is not designed for potrait displays but works on mobile devices.
