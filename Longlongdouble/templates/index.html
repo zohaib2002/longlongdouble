@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Hello, World!
+{% endblock %}
+
+{% block body %}
+
+	<div style="display: flex">
+
+		<div>
+			<p style="font-size: 20px; margin-left: 20px; margin-top: 60px"><b>All Entries</b></p>
+			<ul class="list-group">
+
+				{% for article in articles %}
+					<form action="/" method="post">
+						<input hidden type="number" name="id" value="{{ article.ID }}">
+						<li class="list-group-item">
+							<button type="submit" style="background: transparent; border: none; outline: none;">
+								{{ article.title[:23] }}
+								{% if len(article.title) > 23 %}
+								...
+								{% endif %}
+							</button>
+						</li>
+						
+					</form>
+				{% endfor %}
+
+			</ul>
+		</div>	
+
+		<div class="blogview">
+			
+			<div style="text-align: center;">
+				<h1><br>Latest Entires</h1>
+			</div>
+
+			{% for article in reversed(articles)%}
+				<div class="blogcard">	
+					
+					<form action="/" method="post">
+						<input hidden type="number" name="id" value="{{ article.ID }}">
+						<h2>{{ article.title }}</h2>
+						<small>Published on {{ article.date }}</small>
+						<br><br><br>
+						<p>{{ tenlines(article.content[:1000]) | safe }}</p>
+						<br>
+						<p>
+							Tags:   
+							{% for tag in article.tags %}
+								<span class="tag" >{{ tag }}</span>
+							{% endfor %}
+						</p>
+						<div style="text-align: right">
+							<button type="submit" class="btn btn-outline-success btn-lg", style="width: 20%">Read More</button>
+						</div>
+					</form>
+
+				</div>
+			{% endfor %}
+
+
+		</div>
+
+	</div>
+
+{% endblock %}

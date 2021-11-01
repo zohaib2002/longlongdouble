@@ -1,0 +1,37 @@
+body 
+{
+   scrollbar-width: none;
+   -ms-overflow-style: none;
+}
+.blogcard
+{
+	margin: 50px;
+	flex: 1;
+	background-color: white;
+	border-radius: 20px;
+	padding-top: 60px;
+	padding-left: 60px;
+	padding-right: 40px;
+	padding-bottom: 40px;
+}
+.tag
+{
+	border-radius: 10px;
+	background-color: MintCream;
+	padding: 4px;
+	color: green;
+}
+.blogview
+{
+	align-items: center;
+	flex: 1;
+	overflow-y: scroll;
+	height: 100vh;
+	scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+::-webkit-scrollbar {
+    width: 0px; /* Edge, Chrome */
+    height: 0px;
+    background: transparent;
+}
