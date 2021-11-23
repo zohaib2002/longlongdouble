@@ -2,7 +2,7 @@
 My personal blog to post CS related stuff
 
 ### Project Description
-This blog is made using the Flask pyhton framework. The application loads all the articles stored in the database and previews them on the index (home) page. Clicking on 'Read More' on an any post preview opens the article for reading. The project uses [Disqus](disqus.com) to host blog comments. The comment section is unique for each indivisual post. It also uses [Bootstrap](getbootstrap.com) CSS libraries for styling.
+This blog is made using the Flask python framework. The application loads all the articles stored in the database and previews them on the index (home) page. Clicking on 'Read More' on an any post preview opens the article for reading. The project uses [Disqus](disqus.com) to host blog comments. The comment section is unique for each indivisual post. It also uses [Bootstrap](getbootstrap.com) CSS libraries for styling.
 
 ### Database Schema
 The database file longlongdouble.db has the following structure
